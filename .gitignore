@@ -32,3 +32,6 @@ Thumbs.db
 #only for the Pyber project
 
 *.pdf
+
+
+.eslintrc.json
