@@ -1,6 +1,6 @@
 
-var svgWidth = 900;
-var svgHeight = 300;
+var svgWidth = 1000;
+var svgHeight = 400;
 
 var margin = {
 	top: 20,
@@ -52,9 +52,19 @@ d3.csv("assets/data/data.csv").then(function(dataCSV) {
 
 	chartGroup.call(toolTip);
 	
-	circleGroup.on();
+	circleGroup.on("mouseover", function(data) {
+			toolTip.show(data, this);
+		})
+		.on("mouseout", function(data, index) {
+			toolTip.hide(data);
+	});
 
-	circleText.on();
+	circleText.on("mouseover", function(data) {
+			toolTip.show(data, this);
+		})
+		.on("mouseout", function(data, index) {
+			toolTip.hide(data);
+	});
 
 	chartGroup.append("text").attr("transform", "rotate(-90)")
 		.attr("y", 0 - margin.left + 40).attr("x", 0 - (height / 2))
