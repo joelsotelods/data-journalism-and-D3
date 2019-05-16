@@ -1,4 +1,4 @@
-# Wealth vs Obessity? 
+# Wealth vs Obesity? 
 
 The purpose of the project is to build an scatter plot using D3 Viz in order to discover relationships between different variables that determine the correlations in health/economy/race/etc.
 
