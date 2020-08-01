@@ -9,3 +9,10 @@ The purpose of the project is to build an scatter plot using D3 Viz in order to 
 ![home_2](images/screen_2.png)
 
 
+#### Self Note:
+
+Start with 
+
+```python
+python -m http.server
+```
